@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ägypten · Werkbank</title>
+<meta name="description" content="69 interaktive Lernbausteine zum alten Ägypten – zum Lesen, Üben, Forschen und Gestalten.">
+<link rel="stylesheet" href="css/werkbank.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%278%27 fill=%27%23263c3a%27/%3E%3Cpath d=%27M8 49 32 12 56 49Z%27 fill=%27%23efe0d3%27/%3E%3C/svg%3E">
+</head>
+<body>
+<a href="#main" class="skip">Zur Arbeitsfläche</a>
+<header class="topbar">
+<div class="brand">Ägypten <span>WERKBANK · 69 BAUSTEINE</span>
+</div>
+<div class="top-actions">
+<a href="https://ge6-aegypten.netlify.app/" target="_blank" rel="noopener">Vorlage ↗</a>
+<button type="button" id="overview-button">Alle Kategorien</button>
+<button type="button" id="fullscreen">Vollbild</button>
+</div>
+</header>
+<nav class="worknav" aria-label="Baustein wechseln" hidden>
+<select class="cat-select" id="category-select" aria-label="Kategorie">
+</select>
+<select class="item-select" id="item-select" aria-label="Baustein">
+</select>
+<div class="step-control">
+<button type="button" id="previous" aria-label="Vorheriger Baustein">←</button>
+<span id="position">
+</span>
+<button type="button" id="next" aria-label="Nächster Baustein">→</button>
+</div>
+</nav>
+<main id="main">
+<section class="overview" id="overview">
+<div class="overview-head">
+<h1>Baustein wählen</h1>
+<input type="search" id="search" placeholder="Baustein oder Thema suchen …" aria-label="Baustein oder Thema suchen">
+</div>
+<p id="search-count" class="search-count" role="status" hidden>
+</p>
+<div id="categories">
+</div>
+</section>
+<section id="workpage" class="workpage" hidden>
+<header class="workhead">
+<div>
+<div id="topic" class="topic">
+</div>
+<h1 id="work-title" tabindex="-1">
+</h1>
+<p id="task">
+</p>
+</div>
+<div class="small-actions">
+<button type="button" class="button" id="reset">Neu starten</button>
+<button type="button" class="button" id="export">HTML herunterladen</button>
+</div>
+</header>
+<p id="export-status" class="feedback" role="status" hidden>
+</p>
+<div id="activity-host">
+</div>
+</section>
+</main>
+<script defer src="js/bilder.js">
+</script>
+<script defer src="js/grundlagen.js">
+</script>
+<script defer src="js/bausteine-01-25.js">
+</script>
+<script defer src="js/bausteine-26-44.js">
+</script>
+<script defer src="js/bausteine-45-69.js">
+</script>
+<script defer src="js/export.js">
+</script>
+<script defer src="js/app.js">
+</script>
+<noscript>
+<p>Bitte aktiviere JavaScript, um die Lernbausteine zu nutzen.</p>
+</noscript>
+</body>
+</html>

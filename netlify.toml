@@ -1,0 +1,11 @@
+# Statische Website: kein Build-Befehl und keine Paketinstallation erforderlich.
+[build]
+  publish = "public"
+
+# Hash-Links wie /#baustein-39 benötigen keine SPA-Weiterleitung.
+# Lernbausteine dürfen in andere Lernlandschaften eingebettet werden.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
